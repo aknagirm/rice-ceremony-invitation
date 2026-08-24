@@ -27,7 +27,7 @@ function Itinerary() {
   return (
     <div className="page itinerary-page">
       <div className="page-scroll">
-        <h2 className="page-title">&#128197; Itinerary</h2>
+        <h2 className="page-title">&#128467;&#65039; Itinerary</h2>
 
         <div className="itinerary-card">
           <div className="itinerary-date">
