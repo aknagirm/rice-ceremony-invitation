@@ -44,9 +44,9 @@ function Location() {
           <h4>&#128161; Getting There</h4>
           <ul>
             <li>Nearest Bus Stop — Behala Thana</li>
-            <li>Nearest Metro — Kalighat / Rabindra Sarobar</li>
+            <li>Nearest Metro Station — Kalighat / Rabindra Sarobar</li>
             <li>Nearest Railway Station — New Alipore / Tollygunge</li>
-            <li>From there, take a bus or autorickshaw to Behala Thana</li>
+            <li>From station, take a bus or autorickshaw to Behala Thana</li>
             <li>From Behala Thana, take an autorickshaw or rickshaw to the hall</li>
           </ul>
         </div>
