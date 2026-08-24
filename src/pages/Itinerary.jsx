@@ -38,16 +38,8 @@ function Itinerary() {
 
           <div className="itinerary-timeline">
             <div className="timeline-item">
-              <div className="time">9:00 AM</div>
-              <div className="event">Breakfast</div>
-            </div>
-            <div className="timeline-item">
               <div className="time">11:00 AM</div>
               <div className="event">Annaprasan Ceremony</div>
-            </div>
-            <div className="timeline-item">
-              <div className="time">12:30 PM</div>
-              <div className="event">Lunch</div>
             </div>
             <div className="timeline-item">
               <div className="time">6:30 PM</div>
