@@ -1,0 +1,192 @@
+.home-page {
+  background: linear-gradient(180deg, #fdf8f0 0%, #f5f0e8 100%);
+}
+
+.home-card {
+  max-width: 500px;
+  margin: 0 auto;
+  background: linear-gradient(180deg, #fdf8f0 0%, #fef6e8 40%, #fdf3e0 100%);
+  border-radius: 12px;
+  box-shadow: 0 8px 30px rgba(0, 0, 0, 0.1);
+  overflow: hidden;
+  position: relative;
+}
+
+.home-card-inner {
+  padding: 25px 30px;
+  text-align: center;
+  position: relative;
+  z-index: 2;
+}
+
+.home-title {
+  font-family: 'Dancing Script', cursive;
+  font-size: 42px;
+  color: #8b1a1a;
+  font-weight: 700;
+  line-height: 1.1;
+}
+
+.home-subtitle {
+  font-family: 'Dancing Script', cursive;
+  font-size: 28px;
+  color: #8b1a1a;
+  font-weight: 600;
+  margin-bottom: 15px;
+}
+
+.home-photo {
+  width: 200px;
+  height: 200px;
+  border-radius: 50%;
+  margin: 10px auto;
+  border: 4px solid #e8c880;
+  overflow: hidden;
+  background: #f0e6d6;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+.home-photo img {
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+}
+
+.photo-placeholder {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  color: #b89860;
+  font-size: 13px;
+  gap: 5px;
+}
+
+.photo-placeholder .icon {
+  font-size: 40px;
+}
+
+.home-invite-text {
+  font-size: 14px;
+  color: #4a3520;
+  line-height: 1.7;
+  margin: 18px 0 8px;
+}
+
+.home-baby-name {
+  font-family: 'Dancing Script', cursive;
+  font-size: 48px;
+  color: #8b1a1a;
+  font-weight: 700;
+  margin: 5px 0;
+}
+
+.home-parents {
+  font-family: 'Playfair Display', serif;
+  font-size: 14px;
+  color: #6b5030;
+  margin-bottom: 15px;
+  font-weight: 600;
+}
+
+.home-details {
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+  border: 2px solid #4a3520;
+  border-radius: 6px;
+  overflow: hidden;
+  margin: 15px 0;
+}
+
+.home-details .detail-cell {
+  padding: 12px 10px;
+  text-align: center;
+  border-bottom: 1px solid #ccc;
+  border-right: 1px solid #ccc;
+}
+
+.home-details .detail-cell:nth-child(2n) {
+  border-right: none;
+}
+
+.home-details .detail-cell:nth-last-child(-n+2) {
+  border-bottom: none;
+}
+
+.home-details .label {
+  font-size: 11px;
+  font-weight: 700;
+  text-transform: uppercase;
+  color: #6b5030;
+  letter-spacing: 0.5px;
+}
+
+.home-details .value {
+  font-size: 13px;
+  color: #4a3520;
+  margin-top: 3px;
+  font-weight: 500;
+}
+
+.home-footer {
+  font-family: 'Dancing Script', cursive;
+  font-size: 16px;
+  color: #6b4423;
+  margin-top: 15px;
+}
+
+.home-rsvp {
+  font-family: 'Playfair Display', serif;
+  font-size: 15px;
+  font-weight: 700;
+  color: #8b1a1a;
+  margin-top: 8px;
+}
+
+/* Side leaves positioning */
+.home-card .side-leaves {
+  position: absolute;
+  top: 60px;
+  opacity: 0.6;
+  pointer-events: none;
+}
+
+.home-card .side-leaves.left {
+  left: 0;
+}
+
+.home-card .side-leaves.right {
+  right: 0;
+}
+
+@media (max-width: 480px) {
+  .home-card-inner {
+    padding: 20px 15px;
+  }
+
+  .home-title {
+    font-size: 34px;
+  }
+
+  .home-subtitle {
+    font-size: 22px;
+  }
+
+  .home-baby-name {
+    font-size: 38px;
+  }
+
+  .home-photo {
+    width: 160px;
+    height: 160px;
+  }
+
+  .home-details {
+    grid-template-columns: 1fr;
+  }
+
+  .home-details .detail-cell {
+    border-right: none !important;
+  }
+}

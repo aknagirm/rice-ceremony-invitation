@@ -1,0 +1,103 @@
+.location-page {
+  background: linear-gradient(180deg, #fdf8f0 0%, #f5f0e8 100%);
+}
+
+.location-page .page-scroll {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+
+.location-page .page-scroll > * {
+  width: 100%;
+  max-width: 500px;
+}
+
+.location-card {
+  background: white;
+  border-radius: 12px;
+  box-shadow: 0 4px 20px rgba(0, 0, 0, 0.08);
+  overflow: hidden;
+  margin-bottom: 20px;
+}
+
+.location-map {
+  width: 100%;
+  height: 280px;
+  border: none;
+  display: block;
+}
+
+.location-details {
+  padding: 25px;
+}
+
+.location-name {
+  font-family: 'Playfair Display', serif;
+  font-size: 20px;
+  color: #8b1a1a;
+  margin-bottom: 10px;
+}
+
+.location-address {
+  font-size: 14px;
+  color: #6b5030;
+  line-height: 1.6;
+  margin-bottom: 10px;
+}
+
+.location-landmark {
+  font-size: 13px;
+  color: #d4a030;
+  font-style: italic;
+  margin-bottom: 15px;
+}
+
+.directions-btn {
+  display: inline-block;
+  padding: 12px 24px;
+  background: #c0392b;
+  color: white;
+  text-decoration: none;
+  border-radius: 6px;
+  font-size: 14px;
+  font-weight: 500;
+  transition: all 0.3s ease;
+}
+
+.directions-btn:hover {
+  background: #8b1a1a;
+  transform: translateY(-1px);
+  box-shadow: 0 4px 12px rgba(192, 57, 43, 0.3);
+}
+
+.location-tips {
+  background: white;
+  border-radius: 12px;
+  box-shadow: 0 4px 20px rgba(0, 0, 0, 0.08);
+  padding: 20px 25px;
+}
+
+.location-tips h4 {
+  font-family: 'Playfair Display', serif;
+  font-size: 16px;
+  color: #4a3520;
+  margin-bottom: 12px;
+}
+
+.location-tips ul {
+  list-style: none;
+  padding: 0;
+}
+
+.location-tips li {
+  font-size: 14px;
+  color: #6b5030;
+  padding: 8px 0;
+  border-bottom: 1px solid #f0e6d6;
+  line-height: 1.5;
+}
+
+.location-tips li:last-child {
+  border-bottom: none;
+}
