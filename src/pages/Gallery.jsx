@@ -10,7 +10,7 @@ import './Gallery.css'
 */
 const months = [
   { id: 0, label: 'Newborn', photos: ['0.1.jpg', '0.2.jpg', '0.3.jpeg', '0.4.jpeg'] },
-  { id: 1, label: '1 Month', photos: ['1.1.jpg', '1.2.jpg', '1.3.jpg'] },
+  { id: 1, label: '1 Month', photos: ['1.1.jpg', '1.2.jpg', '1.3.jpg', '1.4.jpg'] },
   { id: 2, label: '2 Months', photos: ['2.1.jpg', '2.2.jpg', '2.3.jpg', '2.4.jpg'] },
   { id: 3, label: '3 Months', photos: ['3.1.jpg', '3.2.jpg', '3.3.jpeg', '3.4.jpeg'] },
   { id: 4, label: '4 Months', photos: ['4.1.jpeg', '4.2.jpg', '4.3.jpeg', '4.4.jpeg'] },
