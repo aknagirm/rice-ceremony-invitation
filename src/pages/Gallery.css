@@ -2,41 +2,84 @@
   background: linear-gradient(180deg, #fdf8f0 0%, #f5f0e8 100%);
 }
 
-.gallery-page .page-scroll {
-  display: flex;
-  flex-direction: column;
-  align-items: center;
-}
-
-.gallery-page .page-scroll > * {
-  width: 100%;
-  max-width: 500px;
-}
-
 .gallery-intro {
   text-align: center;
   font-size: 14px;
   color: #6b5030;
   font-style: italic;
-  margin-bottom: 20px;
+  margin-bottom: 25px;
 }
 
-.gallery-grid {
-  display: grid;
-  grid-template-columns: repeat(2, 1fr);
-  gap: 12px;
+.months-list {
+  display: flex;
+  flex-direction: column;
+  gap: 28px;
 }
 
-.gallery-item {
-  border-radius: 10px;
-  overflow: hidden;
-  aspect-ratio: 1;
+/* ===== Month section ===== */
+.month-section {
   background: white;
+  border-radius: 12px;
+  box-shadow: 0 3px 15px rgba(0, 0, 0, 0.06);
+  padding: 18px 18px 20px;
+}
+
+.month-header {
+  display: flex;
+  align-items: center;
+  gap: 12px;
+  margin-bottom: 15px;
+}
+
+.month-badge {
+  width: 34px;
+  height: 34px;
+  flex-shrink: 0;
+  border-radius: 50%;
+  background: linear-gradient(135deg, #d4a030, #c0392b);
+  color: white;
   display: flex;
   align-items: center;
   justify-content: center;
-  box-shadow: 0 2px 10px rgba(0, 0, 0, 0.06);
+  font-family: 'Playfair Display', serif;
+  font-weight: 700;
+  font-size: 15px;
+  box-shadow: 0 2px 6px rgba(192, 57, 43, 0.3);
+}
+
+.month-title {
+  font-family: 'Dancing Script', cursive;
+  font-size: 26px;
+  color: #8b1a1a;
+  font-weight: 700;
+  white-space: nowrap;
+}
+
+.month-line {
+  flex: 1;
+  height: 2px;
+  background: linear-gradient(90deg, #e8c880, transparent);
+  border-radius: 2px;
+}
+
+/* ===== Photo grid inside a month ===== */
+.month-grid {
+  display: grid;
+  grid-template-columns: repeat(2, 1fr);
+  gap: 10px;
+}
+
+.gallery-item {
+  width: 100%;
+  border-radius: 10px;
+  overflow: hidden;
+  aspect-ratio: 1;
+  background: #f7f0e4;
+  display: flex;
+  align-items: center;
+  justify-content: center;
   transition: transform 0.3s ease;
+  cursor: pointer;
 }
 
 .gallery-item:hover {
@@ -49,10 +92,15 @@
   object-fit: cover;
 }
 
+.gallery-item.empty {
+  border: 1.5px dashed #e0cfa8;
+  background: #fdfaf3;
+}
+
 .gallery-placeholder {
   text-align: center;
   color: #b89860;
-  font-size: 13px;
+  font-size: 12px;
   display: flex;
   flex-direction: column;
   align-items: center;
@@ -60,12 +108,12 @@
 }
 
 .gallery-placeholder .icon {
-  font-size: 32px;
+  font-size: 28px;
 }
 
 .gallery-note {
   text-align: center;
-  margin-top: 25px;
+  margin-top: 28px;
   font-style: italic;
   color: #6b5030;
   font-size: 14px;

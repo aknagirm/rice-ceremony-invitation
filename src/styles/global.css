@@ -52,6 +52,13 @@ html, body, #root {
   -webkit-overflow-scrolling: touch;
 }
 
+/* Constrain inner content width consistently across all pages */
+.page-scroll > * {
+  max-width: 500px;
+  margin-left: auto;
+  margin-right: auto;
+}
+
 .page-title {
   font-family: 'Dancing Script', cursive;
   font-size: 26px;
