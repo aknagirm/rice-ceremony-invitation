@@ -15,7 +15,7 @@ import { useState } from 'react'
 const pages = [
   { id: 'home', label: 'Home' },
   { id: 'location', label: 'Location' },
-  { id: 'itinerary', label: 'Itinerary' },
+  // { id: 'itinerary', label: 'Itinerary' },
   { id: 'gallery', label: 'Gallery' },
   { id: 'upload', label: 'Upload' },
 ]
@@ -49,7 +49,7 @@ function App() {
       >
         <SwiperSlide><Home /></SwiperSlide>
         <SwiperSlide><Location /></SwiperSlide>
-        <SwiperSlide><Itinerary /></SwiperSlide>
+        {/* <SwiperSlide><Itinerary /></SwiperSlide> */}
         <SwiperSlide><Gallery /></SwiperSlide>
         <SwiperSlide><Upload /></SwiperSlide>
       </Swiper>
